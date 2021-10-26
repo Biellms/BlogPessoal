@@ -6,7 +6,13 @@
 <div align = "center">
   <p><h3>Diagrama Entidade Relacionamento
   <br><br>
-  <img width="250px" src=""/>
+  <img width="1300px" src="https://github.com/Biellms/BlogPessoal/blob/main/DbDesigner%20-%20Imagens%20-%20Dicionario%20de%20Dados/ImagemBlog.jpeg"/>
+  
+  ##
+  
+  <p><h3>Dicionário de Dados
+  <br><br>
+  <img width="1300px" src="https://github.com/Biellms/BlogPessoal/blob/main/DbDesigner%20-%20Imagens%20-%20Dicionario%20de%20Dados/DicionarioDeDados.jpeg"/>
   </div>
 
 
