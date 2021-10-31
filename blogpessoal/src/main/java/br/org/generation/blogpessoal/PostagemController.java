@@ -26,9 +26,9 @@ public class PostagemController {
 	
 	@GetMapping("/{id}") // --> {} indica que é uma variável
 	public ResponseEntity<Postagem> getById(@PathVariable long id) {
-		return postagemRepository.findById(id) // Encontrar o ID
-				.map(resposta -> ResponseEntity.ok(resposta)) // Resposta ok
-				.orElse(ResponseEntity.notFound().build()); // Para dizer que o id não existe, e então contruir um objeto null
+		return postagemRepository.findById(id) 
+				.map(resposta -> ResponseEntity.ok(resposta))
+				.orElse(ResponseEntity.notFound().build()); 
 		// SELECT * FROM tb_postagens WHERE id = ?
 	}
 
@@ -44,13 +44,19 @@ public class PostagemController {
 	}
 	
 	@PutMapping // Atualizar dados na tb_postagem
-	public ResponseEntity<Postagem> PutPostagem(@RequestBody Postagem postagem) { 
-		return ResponseEntity.status(HttpStatus.OK).body(postagemRepository.save(postagem));
+	public ResponseEntity<Postagem> PutPostagem(@RequestBody Postagem postagem) {
+		return postagemRepository.findById(postagem.getId()) 
+				.map(resposta -> ResponseEntity.status(HttpStatus.OK).body(postagemRepository.save(postagem)))
+				.orElse(ResponseEntity.notFound().build());
 	}
 	
 	@DeleteMapping("/{id}") // Deletar dados da tabela
-	public void deletePostagem(@PathVariable long id) {
-		postagemRepository.deleteById(id);
+	public ResponseEntity<Void> deletaPostagem(@PathVariable long id) {
+        if (!postagemRepository.existsById(id)) { // Verifica se existe
+            return ResponseEntity.notFound().build();
+        }
+        postagemRepository.deleteById(id); // Deleta a postagem
+        return ResponseEntity.noContent().build();
 		// DELETE * FROM tb_postagem WHERE id = ?;
 	}
 }
