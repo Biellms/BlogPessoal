@@ -2,7 +2,6 @@ package br.org.generation.blogpessoal.controller;
 
 import java.util.*;
 
-import org.aspectj.apache.bcel.Repository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

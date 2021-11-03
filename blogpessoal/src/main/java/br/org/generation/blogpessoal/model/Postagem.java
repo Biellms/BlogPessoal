@@ -4,10 +4,13 @@ import java.util.*;
 import javax.persistence.*;
 import javax.validation.constraints.*;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 @Entity
 @Table(name = "tb_postagens") // Dizer o nome da tabela
 public class Postagem {
 
+	// Atributos
 	@Id // Chave Primaria
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
@@ -22,6 +25,10 @@ public class Postagem {
 	
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date data = new java.sql.Date(System.currentTimeMillis());
+	
+	@ManyToOne // Muitos para Um
+	@JsonIgnoreProperties("postagem") // Para não criar um efeito cascata
+	private Tema tema;
 	
 	// Getters and Setters
 	public long getId() { return id; }
@@ -39,6 +46,10 @@ public class Postagem {
 	public Date getData() { return data; }
 	
 	public void setData(Date data) { this.data = data; }
+
+	public Tema getTema() { return tema; }
+
+	public void setTema(Tema tema) { this.tema = tema; }
 	
 }
 
