@@ -1,16 +1,16 @@
 -- Banco de Dados
-CREATE DATABASE db_blog_pessoal;
-USE db_blog_pessoal;
+CREATE DATABASE db_blogpessoal;
+USE db_blogpessoal;
 
 -- Tabela Tema
-CREATE TABLE Temas (
+CREATE TABLE tb_temas (
 	id bigint NOT NULL AUTO_INCREMENT,
 	descricao varchar(255) NOT NULL,
 	CONSTRAINT Temas_pk PRIMARY KEY (id)
 );
 
 -- Tabela Tema
-CREATE TABLE Postagens (
+CREATE TABLE tb_postagens (
 	id bigint NOT NULL AUTO_INCREMENT,
 	titulo varchar(255) NOT NULL,
 	texto varchar(255) NOT NULL,
@@ -21,7 +21,7 @@ CREATE TABLE Postagens (
 );
 
 -- Tabela Tema
-CREATE TABLE Usuarios (
+CREATE TABLE tb_usuarios (
 	id bigint NOT NULL AUTO_INCREMENT,
 	nome varchar(255) NOT NULL,
 	usuario varchar(255) NOT NULL UNIQUE,
@@ -30,8 +30,12 @@ CREATE TABLE Usuarios (
 );
 
 -- Alterando dados
-ALTER TABLE Postagens ADD CONSTRAINT Postagens_fk0 FOREIGN KEY (tema_id) REFERENCES Temas(id);
-ALTER TABLE Postagens ADD CONSTRAINT Postagens_fk1 FOREIGN KEY (usuario_id) REFERENCES Usuarios(id);
+ALTER TABLE tb_postagens ADD CONSTRAINT Postagens_fk0 FOREIGN KEY (tema_id) REFERENCES tb_temas(id);
+ALTER TABLE tb_postagens ADD CONSTRAINT Postagens_fk1 FOREIGN KEY (usuario_id) REFERENCES tb_temas(id);
 
+-- Selects
+SELECT * FROM tb_postagens;
+SELECT * FROM tb_temas;
+SELECT * FROM tb_usuarios;
 
-
+DROP DATABASE db_blogpessoal;
