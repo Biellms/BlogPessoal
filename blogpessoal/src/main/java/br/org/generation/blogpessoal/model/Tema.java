@@ -5,8 +5,10 @@ import java.util.*;
 import javax.persistence.*;
 import javax.validation.constraints.*;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 @Entity
-@Table(name = "tb_tema")
+@Table(name = "tb_temas") // Dizer o nome da tabela
 public class Tema {
 	
 	// Atributos
@@ -14,11 +16,13 @@ public class Tema {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 	
-	@NotNull
+	@NotNull(message = "O atributo Descrição é obrigatório")
 	@Size(min = 1, max = 100)
 	private String descricao;
 	
+	// Um tema para muitas postagens
 	@OneToMany(mappedBy = "tema", cascade = CascadeType.ALL) // CascadeType.ALL apagara tudo relacionado ao tema
+	@JsonIgnoreProperties("tema")
 	private List<Postagem> postagem;
 	
 	// Getters and Setters
@@ -33,6 +37,5 @@ public class Tema {
 	public List<Postagem> getPostagem() { return postagem; }
 	
 	public void setPostagem(List<Postagem> postagem) { this.postagem = postagem; } 
-	
 	
 }

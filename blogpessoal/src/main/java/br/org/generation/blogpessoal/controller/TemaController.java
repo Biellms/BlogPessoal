@@ -11,7 +11,7 @@ import br.org.generation.blogpessoal.model.Tema;
 import br.org.generation.blogpessoal.repository.TemaRepository;
 
 @RestController
-@RequestMapping("/tema")
+@RequestMapping("/temas")
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 public class TemaController {
 
@@ -53,7 +53,7 @@ public class TemaController {
 		return temaRepository.findById(id)
 				.map(resposta -> {
         			temaRepository.deleteById(id); // Se existir, será excluido
-        			return ResponseEntity.ok().build();
+        			return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
         		}).orElse(ResponseEntity.notFound().build()); // Caso contrario exibira protocolo 404
 	}
 }

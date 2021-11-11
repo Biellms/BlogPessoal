@@ -16,7 +16,7 @@ public class Postagem {
 	private long id;
 	
 	@NotNull(message = "O atributo título é obrigatório!")
-	@Size(min = 5, max = 100, message = "O título deve conter no mínimo 5 caracteres e no máximo 100!")
+	@Size(max = 100, message = "O título deve conter no mínimo 5 caracteres e no máximo 100!")
 	private String titulo;
 	
 	@NotNull(message = "O atributo texto é obrigatório!")
@@ -26,9 +26,13 @@ public class Postagem {
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date data = new java.sql.Date(System.currentTimeMillis());
 	
-	@ManyToOne // Muitos para Um
+	@ManyToOne // Muitas postagens para um tema
 	@JsonIgnoreProperties("postagem") // Para não criar um efeito cascata
 	private Tema tema;
+	
+	@ManyToOne // Muitos usuarios para um tema
+	@JsonIgnoreProperties("postagem")
+	private Usuario usuario;
 	
 	// Getters and Setters
 	public long getId() { return id; }
@@ -50,6 +54,10 @@ public class Postagem {
 	public Tema getTema() { return tema; }
 
 	public void setTema(Tema tema) { this.tema = tema; }
+
+	public Usuario getUsuario() { return usuario; }
+
+	public void setUsuario(Usuario usuario) { this.usuario = usuario; }
 	
 }
 

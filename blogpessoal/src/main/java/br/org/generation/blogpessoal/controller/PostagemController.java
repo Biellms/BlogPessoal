@@ -55,7 +55,7 @@ public class PostagemController {
         return postagemRepository.findById(id) // Verifica se o id existe
         		.map(resposta -> {
         			postagemRepository.deleteById(id); // Se existir, será excluido
-        			return ResponseEntity.ok().build();
+        			return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
         		}).orElse(ResponseEntity.notFound().build()); // Caso contrario apresentará protocolo 404
 		// DELETE * FROM tb_postagem WHERE id = ?;
 	}
