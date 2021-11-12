@@ -20,6 +20,7 @@ public class Usuario {
 	@Size(min = 10, max = 255, message = "O Nome da completo deve conter no mínimo 10 caracteres e no máximo 255!")
 	private String nome;
 		
+	@Email(message = "O atributo Usuário deve ser um email válido!")
 	@NotNull(message = "O atributo usuário é obrigatório!")
 	@Size(max = 255, message = "O usuário deve conter no máximo 255!")
 	private String usuario;

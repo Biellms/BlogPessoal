@@ -16,11 +16,12 @@ import br.org.generation.blogpessoal.repository.UsuarioRepository;
  * Implementa a interface UserDetailsService, que é responsável por recuperar os dados
  * do usuário no Banco de Dados pelo usuário e converter em um objeto da Classe 
  * UserDetailsImpl.
+ * 
  * Por se tratar de uma implementação de uma interface, a classe deve ter em seu nome o 
  * sufixo Impl para indicar que se trata de uma implementação.
+ * 
  * A annotation @Service indica que esta é uma Classe de Serviço, ou seja,
  * implementa regras de negócio da aplicação. */
-
 @Service
 public class UserDetailsServiceImpl implements UserDetailsService {
 
@@ -30,6 +31,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 	/* Sobrecarrega (@Override) o método loadUserByUsername.
 	 * A implementação de autenticação chama o método loadUserByUsername(String username),
 	 * para obter os dados de um usuário com um determinado nome de usuário. 
+	 * 
 	 * O nome do usuário deve ser único. O usuário retornado por este método é um objeto
 	 * da classe UserDetailsImpl.*/
 	@Override
@@ -41,6 +43,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 
 		/*Retorna um objeto do tipo UserDetailsImpl criado com os dados recuperados do
 		 * Banco de dados. 
+		 * 
 		 * O operador :: faz parte de uma expressão que referencia um método, complementando
 		 * uma função lambda. Neste exemplo, o operador faz referência ao construtor da 
 		 * Classe UserDetailsImpl.*/

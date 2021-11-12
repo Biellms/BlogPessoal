@@ -31,10 +31,11 @@ public class UsuarioService {
 	// Método para ATUALIZAR o usuario e verificar se o mesmo já existe.
 	public Optional<Usuario> atualizarUsuario(Usuario usuario) {
 		
-		if (usuarioRepository.findById(usuario.getId()).isPresent()) {
-			usuario.setSenha(criptografarSenha(usuario.getSenha()));
-				return Optional.of(usuarioRepository.save(usuario));
-		} 
+		if (usuarioRepository.findById(usuario.getId()).isPresent()
+			&& !usuarioRepository.findByUsuario(usuario.getUsuario()).isPresent()) {
+				usuario.setSenha(criptografarSenha(usuario.getSenha()));
+					return Optional.of(usuarioRepository.save(usuario));
+		}
 			
 		return Optional.empty();
 	}
