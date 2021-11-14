@@ -19,7 +19,7 @@
 
 ### **Linguagens e Ferramentas utilizadas** 🛠
 - <a href="https://github.com/Biellms/JavaProjeto" target="_blank"><p target="_blank">Java</a>
-- Spring Tool Suite
+- <a href="https://spring.io/tools" target="_blank"><p target="_blank">Spring Suite Tools</a>
 - <a href="https://github.com/Biellms/Spring" target="_blank"><p target="_blank">Spring</a>
 - <a href="https://github.com/Biellms/MySQL" target="_blank"><p target="_blank">MySQL</a>
 
