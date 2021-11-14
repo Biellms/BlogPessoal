@@ -1,5 +1,4 @@
 <div align = "center">
-  <hr>
   <h3>
   <b>Blog Pessoal</b></br></div>
   <div align = "center">
