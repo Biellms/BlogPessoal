@@ -11,4 +11,6 @@ public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
 
 	// SELECT * FROM tb_usuario WHERE usuario LIKE '%?%';
 	public Optional<Usuario> findByUsuario(String usuario);
+	
+	public List<Usuario> findAllByNomeContainingIgnoreCase(String nome);
 }
