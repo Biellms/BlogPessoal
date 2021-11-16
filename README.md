@@ -26,20 +26,6 @@
 - <a href="https://spring.io/tools" target="_blank"><p target="_blank">Spring Suite Tools</a>
 - <a href="https://github.com/Biellms/MySQL" target="_blank"><p target="_blank">MySQL</a>
 - <a href="https://github.com/Biellms/SpringBoot/tree/main/Postman" target="_blank"><p target="_blank">Postman</a>
-  
- ##
-  
-<div align = "center">
-  <p><h3>Diagrama Entidade Relacionamento
-  <br><br>
-  <img width="900px" src="https://github.com/Biellms/BlogPessoal/blob/main/Documentação/Blog%20Pessoal%20-%20dbdesigner.pdf"/>
-  
-  ##
-  
-  <p><h3>Dicionário de Dados
-  <br><br>
-  <img width="900px" src="https://github.com/Biellms/BlogPessoal/blob/main/Documentação/DicionarioDeDados.jpeg"/>
-  </div>
-
+ 
 
 
