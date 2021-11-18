@@ -38,11 +38,13 @@
 							}
 						],
 						"url": {
-							"raw": "localhost:8080/postagens",
+							"raw": "https://biellmsblog.herokuapp.com/postagens",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"biellmsblog",
+								"herokuapp",
+								"com"
 							],
-							"port": "8080",
 							"path": [
 								"postagens"
 							]
@@ -71,14 +73,16 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/postagens/7",
+							"raw": "https://biellmsblog.herokuapp.com/postagens/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"biellmsblog",
+								"herokuapp",
+								"com"
 							],
-							"port": "8080",
 							"path": [
 								"postagens",
-								"7"
+								"1"
 							]
 						}
 					},
@@ -105,11 +109,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/postagens/titulo/",
+							"raw": "https://biellmsblog.herokuapp.com/postagens/titulo/",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"biellmsblog",
+								"herokuapp",
+								"com"
 							],
-							"port": "8080",
 							"path": [
 								"postagens",
 								"titulo",
@@ -122,21 +128,6 @@
 				{
 					"name": "Post Postagem",
 					"request": {
-						"auth": {
-							"type": "basic",
-							"basic": [
-								{
-									"key": "password",
-									"value": "root",
-									"type": "string"
-								},
-								{
-									"key": "username",
-									"value": "root",
-									"type": "string"
-								}
-							]
-						},
 						"method": "POST",
 						"header": [],
 						"body": {
@@ -149,11 +140,13 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8080/postagens",
+							"raw": "https://biellmsblog.herokuapp.com/postagens",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"biellmsblog",
+								"herokuapp",
+								"com"
 							],
-							"port": "8080",
 							"path": [
 								"postagens"
 							]
@@ -164,21 +157,6 @@
 				{
 					"name": "Put Postagem",
 					"request": {
-						"auth": {
-							"type": "basic",
-							"basic": [
-								{
-									"key": "password",
-									"value": "root",
-									"type": "string"
-								},
-								{
-									"key": "username",
-									"value": "root",
-									"type": "string"
-								}
-							]
-						},
 						"method": "PUT",
 						"header": [],
 						"body": {
@@ -191,11 +169,13 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8080/postagens",
+							"raw": "https://biellmsblog.herokuapp.com/postagens",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"biellmsblog",
+								"herokuapp",
+								"com"
 							],
-							"port": "8080",
 							"path": [
 								"postagens"
 							]
@@ -233,11 +213,13 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8080/postagens/",
+							"raw": "https://biellmsblog.herokuapp.com/postagens/",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"biellmsblog",
+								"herokuapp",
+								"com"
 							],
-							"port": "8080",
 							"path": [
 								"postagens",
 								""
@@ -254,29 +236,16 @@
 				{
 					"name": "Get All",
 					"request": {
-						"auth": {
-							"type": "basic",
-							"basic": [
-								{
-									"key": "password",
-									"value": "root",
-									"type": "string"
-								},
-								{
-									"key": "username",
-									"value": "root",
-									"type": "string"
-								}
-							]
-						},
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/temas/",
+							"raw": "https://biellmsblog.herokuapp.com/temas/",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"biellmsblog",
+								"herokuapp",
+								"com"
 							],
-							"port": "8080",
 							"path": [
 								"temas",
 								""
@@ -306,11 +275,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/temas/1",
+							"raw": "https://biellmsblog.herokuapp.com/temas/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"biellmsblog",
+								"herokuapp",
+								"com"
 							],
-							"port": "8080",
 							"path": [
 								"temas",
 								"1"
@@ -340,11 +311,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/temas/descricao/",
+							"raw": "https://biellmsblog.herokuapp.com/temas/descricao/",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"biellmsblog",
+								"herokuapp",
+								"com"
 							],
-							"port": "8080",
 							"path": [
 								"temas",
 								"descricao",
@@ -384,11 +357,13 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8080/temas/",
+							"raw": "https://biellmsblog.herokuapp.com/temas/",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"biellmsblog",
+								"herokuapp",
+								"com"
 							],
-							"port": "8080",
 							"path": [
 								"temas",
 								""
@@ -427,11 +402,13 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8080/temas/",
+							"raw": "https://biellmsblog.herokuapp.com/temas/",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"biellmsblog",
+								"herokuapp",
+								"com"
 							],
-							"port": "8080",
 							"path": [
 								"temas",
 								""
@@ -461,11 +438,13 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/temas/5",
+							"raw": "https://biellmsblog.herokuapp.com/temas/5",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"biellmsblog",
+								"herokuapp",
+								"com"
 							],
-							"port": "8080",
 							"path": [
 								"temas",
 								"5"
@@ -482,29 +461,22 @@
 				{
 					"name": "Get All",
 					"request": {
-						"auth": {
-							"type": "basic",
-							"basic": [
-								{
-									"key": "password",
-									"value": "root",
-									"type": "string"
-								},
-								{
-									"key": "username",
-									"value": "root",
-									"type": "string"
-								}
-							]
-						},
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic Z2FicmllbEBnbWFpbC5jb206MTIzNDU2Nzg=",
+								"type": "text"
+							}
+						],
 						"url": {
-							"raw": "localhost:8080/usuarios/all",
+							"raw": "https://biellmsblog.herokuapp.com/usuarios/all",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"biellmsblog",
+								"herokuapp",
+								"com"
 							],
-							"port": "8080",
 							"path": [
 								"usuarios",
 								"all"
@@ -516,26 +488,11 @@
 				{
 					"name": "Post Logar",
 					"request": {
-						"auth": {
-							"type": "basic",
-							"basic": [
-								{
-									"key": "password",
-									"value": "root",
-									"type": "string"
-								},
-								{
-									"key": "username",
-									"value": "root",
-									"type": "string"
-								}
-							]
-						},
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nome\" : \"Neymar junior\",\r\n    \"usuario\" : \"neymarJu@gmail.com\",\r\n    \"senha\" : 12345678\r\n}",
+							"raw": "{\r\n    \"usuario\" : \"gabriel@gmail.com\",\r\n    \"senha\" : 12345678\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -543,11 +500,13 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8080/usuarios/logar",
+							"raw": "https://biellmsblog.herokuapp.com/usuarios/logar",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"biellmsblog",
+								"herokuapp",
+								"com"
 							],
-							"port": "8080",
 							"path": [
 								"usuarios",
 								"logar"
@@ -559,26 +518,11 @@
 				{
 					"name": "Post Cadastrar",
 					"request": {
-						"auth": {
-							"type": "basic",
-							"basic": [
-								{
-									"key": "password",
-									"value": "root",
-									"type": "string"
-								},
-								{
-									"key": "username",
-									"value": "root",
-									"type": "string"
-								}
-							]
-						},
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nome\" : \"Neymar Junior\",\r\n    \"usuario\" : \"neymar@gmail.com\",\r\n    \"senha\" : 12345678\r\n}",
+							"raw": "{\r\n    \"nome\" : \"Guilherme Rodrigues\",\r\n    \"usuario\" : \"guilherme@gmail.com\",\r\n    \"senha\" : 12345678\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -586,11 +530,13 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8080/usuarios/cadastrar",
+							"raw": "https://biellmsblog.herokuapp.com/usuarios/cadastrar",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"biellmsblog",
+								"herokuapp",
+								"com"
 							],
-							"port": "8080",
 							"path": [
 								"usuarios",
 								"cadastrar"
@@ -602,26 +548,17 @@
 				{
 					"name": "Put Atualizar",
 					"request": {
-						"auth": {
-							"type": "basic",
-							"basic": [
-								{
-									"key": "password",
-									"value": "root",
-									"type": "string"
-								},
-								{
-									"key": "username",
-									"value": "root",
-									"type": "string"
-								}
-							]
-						},
 						"method": "PUT",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic Z3VpbGhlcm1lQGdtYWlsLmNvbToxMjM0NTY3OA==",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"id\" : 2,\r\n    \"nome\" : \"Neymar Junior\",\r\n    \"usuario\" : \"neymarJu@gmail.com\",\r\n    \"senha\" : 12345678\r\n}",
+							"raw": "{\r\n    \"id\" : 1,\r\n    \"nome\" : \"Gabriel Mendes\",\r\n    \"usuario\" : \"gabriel@gmail.com\",\r\n    \"senha\" : 12345678\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -629,48 +566,16 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8080/usuarios/atualizar",
+							"raw": "https://biellmsblog.herokuapp.com/usuarios/atualizar",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"biellmsblog",
+								"herokuapp",
+								"com"
 							],
-							"port": "8080",
 							"path": [
 								"usuarios",
 								"atualizar"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Delete Tema",
-					"request": {
-						"auth": {
-							"type": "basic",
-							"basic": [
-								{
-									"key": "password",
-									"value": "root",
-									"type": "string"
-								},
-								{
-									"key": "username",
-									"value": "root",
-									"type": "string"
-								}
-							]
-						},
-						"method": "DELETE",
-						"header": [],
-						"url": {
-							"raw": "localhost:8080/usuarios/2",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"usuarios",
-								"2"
 							]
 						}
 					},
@@ -717,12 +622,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/postagens",
-							"protocol": "http",
+							"raw": "https://biellmsblog.herokuapp.com/postagens",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"biellmsblog",
+								"herokuapp",
+								"com"
 							],
-							"port": "8080",
 							"path": [
 								"postagens"
 							]
@@ -766,12 +672,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/postagens",
-							"protocol": "http",
+							"raw": "https://biellmsblog.herokuapp.com/postagens",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"biellmsblog",
+								"herokuapp",
+								"com"
 							],
-							"port": "8080",
 							"path": [
 								"postagens"
 							]
