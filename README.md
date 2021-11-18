@@ -2,12 +2,11 @@
   <h3>
   <b>Blog Pessoal</b></br></div>
   <div align = "center">
-  <p>Criação do Back-end de um Blog Pessoal, proposto pela Generation Brasil.
+  <p>Criação do Back-end de um Blog Pessoal, proposto pela Generation Brasil. O conteúdo desse repositório contém a criação de uma API Rest. Utilizando o Spring, contendo implementação de Spring Security, Spring Testing e Deploy utilizando o Heroku/Swagger-UI
   </p>
   </div>  
 <hr>
 <h3><b><a href="https://github.com/Biellms/BlogPessoal/tree/main/Documentação" target="_blank"><p target="blank">Documentação 📄</a></b></h3>
-  
 <hr>
   
 ### **Guias e Referências** 📚
@@ -26,6 +25,6 @@
 - <a href="https://spring.io/tools" target="_blank"><p target="_blank">Spring Suite Tools</a>
 - <a href="https://github.com/Biellms/MySQL" target="_blank"><p target="_blank">MySQL</a>
 - <a href="https://github.com/Biellms/SpringBoot/tree/main/Postman" target="_blank"><p target="_blank">Postman</a>
- 
+- <a href="https://www.heroku.com/" target="_blank"><p target="_blank">Heroku</a>
 
 
