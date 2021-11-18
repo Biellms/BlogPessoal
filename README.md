@@ -2,7 +2,7 @@
   <h3>
   <b>Blog Pessoal</b></br></div>
   <div align = "center">
-  <p>Criação do Back-end de um Blog Pessoal, proposto pela Generation Brasil. O conteúdo desse repositório contém a criação de uma API Rest, utilizando o Spring. Contendo a implementação de Spring Security, Spring Testing e Deploy utilizando o Heroku/Swagger-UI
+  <p>Criação do Back-end de um Blog Pessoal, proposto pela Generation Brasil. O conteúdo desse repositório contém a criação de uma API Rest, utilizando o Spring. Contendo a implementação de Spring Security, Spring Testing e Deploy utilizando o Heroku/Swagger-UI.
   </p>
   </div>  
 <hr>
